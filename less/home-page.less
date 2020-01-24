@@ -2,6 +2,10 @@
 
 .home {
 
+  .atmosphere{
+    width: 100%;
+    margin:0 auto;
+  }
   .intro {
 
     h2 {
@@ -18,6 +22,15 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+
+    @media @phone {
+      .sky, .launch{
+        display:none;
+      }
+      .blast{
+        .phone-width();
+      }
+    }
 
     img {
       width: 28%;
@@ -46,8 +59,20 @@
     display: flex;
     justify-content: center;
 
+    @media @phone{
+      .phone();
+      .phone-width();
+      margin:0;
+      padding:2.5%;
+
+    }
+
     .walk-text {
       width: 50%;
+
+      @media @phone{
+        .phone-width();
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -57,13 +82,30 @@
         margin-bottom: 26px;
       }
 
-      .btn {
+      .signup {
+        .btn-design(35%, 45px, 3%, 10px, 1.8rem);
+
+        &:hover{
+          background-color: red;
+          color: black;
+        }
+        @media @phone {
+          .phone-width();
+          height: 50px;
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @phone{
+        .phone-width();
+        margin:0%;
+        padding-bottom:3%;
+
+      }
       
       img {
         width: 100%;
