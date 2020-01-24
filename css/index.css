@@ -242,6 +242,17 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
+.home .walk .walk-text .signup {
+  background-color: #22283A;
+  color: #F6F7F8;
+  width: 35%;
+  height: 45px;
+  padding: 3%;
+  border-radius: 10px;
+  font-size: 1.8rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
